@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true" class="login-bg">
+  <div class="login-container">
+
+    <ion-card class="login-card">
+      <ion-card-header>
+        <ion-card-title class="text-center">🔐 Acceso</ion-card-title>
+        <ion-card-subtitle class="text-center">Ingresa tus credenciales</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form >
+          <ion-item lines="none">
+            <ion-icon name="person-circle-outline" slot="start" class="input-icon"></ion-icon>
+            <ion-input formControlName="email" placeholder="Correo electrónico" type="email"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-icon name="lock-closed-outline" slot="start" class="input-icon"></ion-icon>
+            <ion-input formControlName="password" placeholder="Contraseña" type="password"></ion-input>
+          </ion-item>
+
+          <ion-button expand="block" type="submit" class="login-button">Iniciar sesión</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>
