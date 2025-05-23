@@ -1,21 +1,23 @@
 .login-bg {
-  --background: linear-gradient(135deg, #1f2937, #4b5563); // fondo gris oscuro
+  --background: linear-gradient(135deg, #1f2937, #4b5563); /* fondo gris oscuro */
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh; /* altura completa de la pantalla */
+  padding: 20px;
 }
 
 .login-container {
   width: 100%;
   max-width: 400px;
-  padding: 20px;
-  margin: auto;
 }
 
 .login-card {
   border-radius: 15px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   background: #ffffff;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .text-center {
@@ -36,13 +38,24 @@
   font-weight: bold;
 }
 
-/* Responsivo */
+/* Responsive para pantallas grandes */
+@media screen and (min-width: 768px) {
+  .login-card {
+    padding: 30px;
+  }
+}
+
+/* Responsive para pantallas pequeñas */
 @media screen and (max-width: 600px) {
-  .login-container {
-    padding: 10px;
+  .login-card {
+    padding: 15px;
   }
 
-  .login-card {
-    padding: 10px;
+  .input-icon {
+    font-size: 18px;
+  }
+
+  .login-button {
+    font-size: 16px;
   }
 }

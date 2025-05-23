@@ -1,0 +1,5 @@
+ion-content {
+  --min-height: 100vh; /* mínimo alto igual al viewport */
+  display: flex;
+  flex-direction: column;
+}
